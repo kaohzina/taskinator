@@ -208,6 +208,15 @@ saveTasks();
 var saveTasks = function() {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
+
+var loadTasks = function() {
+  //Retrieve task from localStorage
+  localStorage.getItem("tasks", JSON.stringify(tasks));
+
+}
+console.log(loadTasks());
+
+
 // Create a new task
 formEl.addEventListener("submit", taskFormHandler);
 
